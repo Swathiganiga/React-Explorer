@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="root"></div>
+    </body>
+    <!-- The crossorigin attribute in HTML is used to handle Cross-Origin Resource Sharing (CORS) for
+      certain elements, such as <img>, <audio>, <video>, <link>, and <script>. 
+        This attribute allows you to specify how the element should handle requests 
+        for resources that are hosted on a different origin (domain) than the
+         one serving the HTML document.-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- 
+        This code snippet demonstrates how to create and render a React element using React and ReactDOM.
+        - `React.createElement('h1', null, 'Hello React')` creates a React element of type 'h1' with no props and the text content 'Hello React'.
+        - `ReactDOM.createRoot(document.getElementById('root'))` initializes a React root container at the DOM element with the id 'root'.
+        - `root.render(element)` renders the created React element into the root container.
+        Note: The script is currently commented out.
+    -->
+    <!-- <script>
+        const element = React.createElement('h1', null, 'Hello React');
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(element);
+    </script> -->
+    <!-- 
+
+This script creates a React element of type 'h1' with the text content 'Hello React' 
+and renders it into the DOM element with the id 'root' using ReactDOM.
+-->
+    <!-- <script>
+        const element = React.createElement('h1', {id:"heading"}, 'Hello React');
+        ReactDOM.render(element, document.getElementById('root'));
+    </script> -->
+
+
+    <!-- 
+        This HTML file includes a script reference to the App.js file.
+        The script tag is used to load the JavaScript file which contains
+        the main logic for the React application.
+    -->
+    <script src="./App.js"></script>
+</body>
+
+</html>
